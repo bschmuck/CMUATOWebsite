@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "ATOFont";
+    src: url("fonts/Prociono-Regular.otf") format('opentype');
+}
+
+#navbarItems a:focus {
+    background-color: #FCF125;
+    color: #001229;
+    border-radius: 5px;
+}
+
+#navbarItems {
+    color: white;
+}
+
+
+html {
+	font-family: "ATOFont";
+	background-color: white;
+}
+
+#titleDiv {
+	text-align: left;
+}
+
+#CMUTitle {
+	color:white;
+}
+#logoContainer {
+	background-color: white;
+	border-bottom-left-radius: 5px;
+}
+
+#CMU {
+/*	color: #F8E71C;
+	background-color: #3AA0FF;*/
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 5px;
+	margin-right: 0px;
+}
+
+#photosDiv {
+	background-color: #132438;
+	margin:0px;
+	padding-top:0px;
+	margin-top:-20px;
+	box-shadow: 0px 1px 5px;
+}
+
+#brothersPage {
+	box-shadow: 0px 1px 5px;
+}
+
+.memberDiv {
+	color:white;
+}
+
+#ATO {
+	margin-left: 0px;
+/*	color: #3AA0FF;*/
+/*	background-color: #F8E71C;*/
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 5px;
+}
+
+.memberDiv {
+	margin-bottom:20px;
+}
+
+#subtitle { 
+	margin-top: 10px;
+	color: #3AA0FF;
+}
+
+.thumbnail {
+	border:none;
+}
+
+a.thumbnail.brotherThumbnail {
+	background-color:transparent;
+}
+
+#title {
+	margin-bottom: 0px;
+}
+
+#pageSelectionSidebar li a{
+	font-size: 30px;
+	color: #3AA0FF;
+
+}
+
+#pageSelectionSidebar li a:hover{
+	font-size: 30px;
+	color: #3AA0FF;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	background-color: #F8E71C;
+
+}
+
+#aboutSection {
+	box-shadow: inset 0px -1px 5px #000;
+}
+
+#ATONav {
+	background-color: #4A90E2;
+	box-shadow: inset 0px 1px 5px;
+	height: 60px;
+}
+
+img.brotherImage {
+	border-radius: 50%;
+}
+
+a.thumbnail.brotherThumbnail {
+	border:none;
+	width:125px;
+	height:125px;
+}
+
+#navbarCollapse {
+	color:white;
+}
+
+
+#navbarSide {
+	padding: 2px;
+	border-radius: 5px;
+	background-color: white;
+}
