@@ -3,16 +3,9 @@
     src: url("fonts/Prociono-Regular.otf") format('opentype');
 }
 
-#navbarItems a:focus {
-    background-color: #FCF125;
-    color: #001229;
-    border-radius: 5px;
-}
-
 #navbarItems {
     color: white;
 }
-
 
 html {
 	font-family: "ATOFont";
