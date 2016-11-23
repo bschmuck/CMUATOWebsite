@@ -21,7 +21,7 @@ $('#eventlist').gCalReader({
   calendarId:'q8774hmduqesk7mjpt7c5iq530@group.calendar.google.com',
 
   // Google API KEY
-  apiKey:'838018135989-fmtalp0ffq8a7de0kcl0g56g2hkf45hs.apps.googleusercontent.com',
+  apiKey:'801068891742-l65t1tadp02v7dcv69dgqn3fo4eulhl8.apps.googleusercontent.com',
 
 
   // <a href="http://www.jqueryscript.net/time-clock/">date</a> format
