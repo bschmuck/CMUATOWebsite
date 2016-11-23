@@ -10,35 +10,14 @@ var showPage = function(selectedPage) {
 		}
 	});
 }
-
-jQuery(document).ready(function(){ 
-	jQuery("#gallery").unitegallery(); 
-}); 
-
 $('#eventlist').gCalReader({
-
-  // Public Google Calendar
   calendarId:'q8774hmduqesk7mjpt7c5iq530@group.calendar.google.com',
-
-  // Google API KEY
-  apiKey:'801068891742-l65t1tadp02v7dcv69dgqn3fo4eulhl8.apps.googleusercontent.com',
-
-
-  // <a href="http://www.jqueryscript.net/time-clock/">date</a> format
+  apiKey:'AIzaSyCH7F6ChOHVASIiOY6QU4KPCVxjLufu0Jc',
   dateFormat: 'LongDate',
-
-  // error message
   errorMsg: 'No events in calendar',
-
-  // maximum events
   maxEvents: 25,
-
-  // future-events filter
   futureEventsOnly: true,
-
-  // descending sort order
-  sortDescending: true
-
+  sortDescending: false
 });
 
 $("#homeSelect").on("click", function() {

@@ -125,6 +125,29 @@ a.thumbnail.brotherThumbnail {
 	color:white;
 }
 
+#eventlist {
+	background:#4A90E2;
+	border-radius: 5px;
+}
+
+.eventtitle {
+	font-weight: bold;
+	font-size:150%;
+	padding-bottom:5px;
+	margin-left:16px;
+}
+
+.eventdate {
+	margin-left:16px;
+}
+
+.location {
+	margin-left:16px;
+}
+
+.description {
+	margin-left:16px;
+}
 
 #navbarSide {
 	padding: 2px;
