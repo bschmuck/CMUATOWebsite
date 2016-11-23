@@ -154,6 +154,10 @@ a.thumbnail.brotherThumbnail {
 	margin-left:16px;
 }
 
+.aboutPageSection {
+	box-shadow: inset 0px 1px 5px black;
+}
+
 .location {
 	margin-left:16px;
 }
