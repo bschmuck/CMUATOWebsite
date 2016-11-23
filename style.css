@@ -111,8 +111,20 @@ a.thumbnail.brotherThumbnail {
 	height: 60px;
 }
 
+#memberDiv {
+
+}
+
 img.brotherImage {
 	border-radius: 50%;
+}
+
+#footer {
+	background-color:#4A90E2;
+	height:40px;
+	text-align:center;
+	padding-top:10px;
+	color:white;
 }
 
 a.thumbnail.brotherThumbnail {
@@ -128,6 +140,7 @@ a.thumbnail.brotherThumbnail {
 #eventlist {
 	background:#4A90E2;
 	border-radius: 5px;
+	box-shadow: inset 0px 1px 5px black;
 }
 
 .eventtitle {
