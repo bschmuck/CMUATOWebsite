@@ -3,8 +3,112 @@
     src: url("fonts/Prociono-Regular.otf") format('opentype');
 }
 
+#logoContainer {
+	padding:10px;
+}
+
+.socialMediaIcon {
+	width:35px;
+	height:35px;
+}
+
+#ATOLogo {
+	width:250px;
+	padding-bottom:25px;
+}
+
 #navbarItems {
     color: white;
+    font-size:20px;
+}
+
+#nationalsHeader {
+	text-align:center;
+	color:#FFB038;
+}
+
+#CMUAlumHeader {
+	padding-top:200px;
+	text-align:center;
+	color:#FFB038;
+}
+
+.contactForm {
+	margin:50px;
+}
+
+#formDiv {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#contactTitle {
+	color:#FFB038;
+}
+
+#nameAddon,#emailAddon,#submitButton {
+	background-color:#011328;
+	color:white;
+	border-style:none;
+}
+
+#homeSelect,#brothersSelect,#alumniSelect,#aboutSelect,#contactSelect {
+	color: white;
+}
+
+#contactDiv {
+	background-color:#4A90E2;
+	padding-top:30px;
+	padding-bottom:45px;
+	margin: auto auto;
+	margin-top:10%;
+	max-width: 400px;
+	border-radius:25px;
+	box-shadow: inset 0px 1px 5px black;
+}
+
+#contactPage {
+	color:white;
+	background-color:#011328;
+	margin-top:-20px;
+	padding-bottom:250px;
+	text-align:center;
+}
+
+#alumniHeader {
+	color:#FFB038;
+	text-align:center;
+}
+
+#alumniDiv {
+	margin-left:20%;
+	margin-right:20%;
+}
+
+#brotherWeekSection {
+}
+
+#alumniPage {
+	color:white;
+	background-color:#011328;
+	margin-top:-20px;
+}
+
+#brotherWeekHeader {
+	color:#4A90E2;
+	text-align:center;
+	padding-top:15px;
+}
+
+#brotherWeekImage {
+	margin-left:20%;
+	margin-right:20%;
+	border-radius:5px;
+}
+
+#brotherWeekTitle {
+	text-align:center;
+	padding-top:15px;
 }
 
 html {
@@ -14,6 +118,7 @@ html {
 
 #titleDiv {
 	text-align: left;
+	margin-top:25px;
 }
 
 #CMUTitle {
@@ -39,10 +144,32 @@ html {
 	padding-top:0px;
 	margin-top:-20px;
 	box-shadow: 0px 1px 5px;
+	padding:25px;
+}
+
+#officersHeader {
+	text-align:center;
+	color:#FFB038;
+}
+
+#membersHeader {
+	padding-top:200px;
+	text-align:center;
+	color:#FFB038;
 }
 
 #brothersPage {
 	box-shadow: 0px 1px 5px;
+	background-color:#011328;
+	margin-top:-20px;
+	overflow:scroll;
+	text-align:center;
+	color:white;
+}
+
+#brothersList {
+	margin-left:20%;
+	margin-right:20%;
 }
 
 .memberDiv {
@@ -96,12 +223,29 @@ a.thumbnail.brotherThumbnail {
 
 #aboutSection {
 	box-shadow: inset 0px -1px 5px #000;
+	color:white;
+	height:500px;
+	overflow: scroll;
+	background-color:#4A90E2;
+}
+
+.aboutSectionHeader {
+	margin-left:40px;
+	margin-right:40px;
+	padding-top:15px;
+}
+
+.aboutSectionText {
+	margin-left:40px;
+	margin-right:40px;
 }
 
 #ATONav {
 	background-color: #4A90E2;
 	box-shadow: inset 0px 1px 5px;
-	height: 60px;
+	margin-top:10px;
+	border:none;
+	border-radius:0px;
 }
 
 #memberDiv {
@@ -130,10 +274,30 @@ a.thumbnail.brotherThumbnail {
 	color:white;
 }
 
+#eventsListCol {
+	height:500px;
+	text-align: center;
+	background:transparent;
+}
+
+#upcomingTitle {
+	background:transparent;
+	border:none;
+	width:80%;
+	margin-left: 10%;
+	margin-right:10%;
+	font-size:25px;
+	color:#4A90E2;
+}
+
 #eventlist {
-	background:#4A90E2;
-	border-radius: 5px;
-	box-shadow: inset 0px 1px 5px black;
+	
+	list-style-type:none;
+	max-height:450px;
+	display: inline-block;
+	overflow: scroll;
+	color:#4A90E2;
+	width:100%;
 }
 
 .eventtitle {
@@ -149,6 +313,21 @@ a.thumbnail.brotherThumbnail {
 
 .aboutPageSection {
 	box-shadow: inset 0px 1px 4px black;
+	height:350px;
+	background-color:#4A90E2;
+	padding-top:30px
+}
+
+#aboutHeader {
+	text-align:center;
+	color:#FFB038;
+}
+
+#aboutPage {
+	color:white;
+	background-color:#011328;
+	margin-top:-20px;
+	height:1200px;
 }
 
 .location {
