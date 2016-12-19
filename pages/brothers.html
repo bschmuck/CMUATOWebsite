@@ -1,0 +1,32 @@
+<div class="col-xs-12" id="brothersPage">
+    <div id="brothersList">
+        <h2 id="officersHeader">The Officers</h2>
+        <br>
+        <div id="officersList">
+            <div ng-repeat="brother in brothers">
+                <div class="col-xs-12 memberDiv" style="background-color:#4A90E2;height:125px;border-radius:100px;box-shadow: inset 0px -1px 5px #000;">
+                    <a href="#" class="brotherThumbnail thumbnail col-xs-2">
+                        <img class="brotherImage" style="width: 125px;height: 125px;margin-left:-20px;margin-top:-3.5px;" ng-src="{{brother.image}}">
+                    </a>
+                    <div class="col-xs-3">
+                        <h3>{{brother.name}}</h3><h4>{{brother.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="membersHeader">General Members</h2>
+        <br>
+        <div id="membersList">
+            <div ng-repeat="brother in brothers">
+                <div class="col-xs-12 memberDiv" style="background-color:#4A90E2;height:125px;border-radius:100px;box-shadow: inset 0px -1px 5px #000;">
+                    <a href="#" class="brotherThumbnail thumbnail col-xs-2">
+                        <img class="brotherImage" style="width: 125px;height: 125px;margin-left:-20px;margin-top:-3.5px;" ng-src="{{brother.image}}">
+                    </a>
+                    <div class="col-xs-3">
+                        <h3>{{brother.name}}</h3><h4>{{brother.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

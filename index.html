@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us" ng-app="myApp">
 <head>
 	<title>CMU Alpha Tau Omega</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -8,7 +8,10 @@
 
 	<script type="text/javascript" src="scripts/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery-migrate-1.4.1.min.js"></script>
-	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    
+    <!-- load angular via CDN -->
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
 </head>
 
 
@@ -39,177 +42,18 @@
 	    <div class="collapse navbar-collapse" id="navbarCollapse">
 	      <ul class="nav navbar-nav" id="navbarItems">
 	        <li><a id="homeSelect" href="#">home<span class="sr-only">(current)</span></a></li>
-	        <li><a id="brothersSelect" href="#">brothers</a></li>
-	        <li><a id="alumniSelect" href="#">alumni</a></li>
-	        <li><a id="aboutSelect" href="#">about</a></li>
-	        <li><a id="contactSelect" href="#">contact</a></li>
+	        <li><a id="brothersSelect" href="#/brothers">brothers</a></li>
+	        <li><a id="alumniSelect" href="#/alumni">alumni</a></li>
+	        <li><a id="aboutSelect" href="#/about">about</a></li>
+	        <li><a id="contactSelect" href="#/contact">contact</a></li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
-
-	<div id="home">
-
-		<!-- Loads collection of ATO images -->
-		<div class="col-xs-12 row row-horizon" id="photosDiv">
-		</div>
-
-		<div class="col-xs-12">
-			<div id="brotherWeekSection" class="col-md-3 col-xs-12">
-				<h3 id="brotherWeekHeader">brother of the week</h3>
-				<img id="brotherWeekImage" width="60%" class="brotherImage" src="images/ato3.jpg">
-				<p id="brotherWeekTitle">Guy Fieri</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div class="col-xs-12 col-md-6" id="aboutSection">
-				<h3 class="aboutSectionHeader">our vision</h3>
-				<p class="aboutSectionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<h3 class="aboutSectionHeader">the founding father experience</h3>
-				<p class="aboutSectionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div class="col-xs-12 col-md-3" id="eventsListCol">
-				<br>
-				<ul id="eventlist" class="list-group">
-					<li id="upcomingTitle">Upcoming Events</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="col-xs-12" id="brothersPage" hidden>
-		<div id="brothersList">
-		<h2 id="officersHeader">The Officers</h2>
-		<br>
-		<div id="officersList">
-		</div>
-
-		<h2 id="membersHeader">General Members</h2>
-		<br>
-		<div id="membersList">
-		</div>
-	</div>
-
-	</div>
-
-	<div class="col-xs-12" id="alumniPage" hidden>
-		<h2 id="alumniHeader">Alumni</h2>
-		<div id="alumniDiv">
-			<h2 id="nationalsHeader">Notable Nationals</h2>
-			<br>
-			<div id="nationalAlums">
-			</div>
-			<h2 id="CMUAlumHeader">Carnegie Mellon</h2>
-			<br>
-			<div id="CMUAlums">
-			</div>
-		</div>
-
-	</div>
-	</div>
-	</div>
-
-	<div class="col-xs-12" id="aboutPage" hidden>
-		<h2 id="aboutHeader">About</h2>
-		<br>
-		<div class="aboutPageSection">
-			<div class="col-xs-1">
-			</div>
-			<div class="col-xs-3">
-				<a href="#" class="thumbnail">
-			      <img src="images/outing.jpeg">
-			    </a>
-		
-			</div>
-			<div class="col-xs-6">
-				<h1 style="">brotherhood</h1>
-				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-			</div>
-				<div class="col-xs-2">
-			</div>
-		</div>
-		<br>
-		<div class="aboutPageSection">
-			<div class="col-xs-2">
-			</div>
-			<div class="col-xs-6">
-				<h1 style="">brotherhood</h1>
-				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-			</div>
-			<div class="col-xs-3">
-				<a href="#" class="thumbnail">
-			      <img src="images/outing.jpeg">
-			    </a>
-			</div>
-			<div class="col-xs-1">
-			</div>
-		</div>
-		<br>
-		<div class="aboutPageSection">
-			<div class="col-xs-1">
-			</div>
-			<div class="col-xs-3">
-				<a href="#" class="thumbnail">
-			      <img src="images/outing.jpeg">
-			    </a>
-			</div>
-			<div class="col-xs-6">
-				<h1 style="">brotherhood</h1>
-				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-			</div>
-			<div class="col-xs-2">
-			</div>
-		</div>
-	</div>
-
-	<div class="col-xs-12" id="contactPage" hidden>
-		<div id="contactDiv">
-			<h2 id="contactTitle">Contact Us</h2>
-			<div id="formDiv">
-				<div class="input-group contactForm">
-		  			<span id="nameAddon" class="input-group-addon">Name</span>
-		 			<input type="text" class="form-control">
-				</div>
-				<div class="input-group contactForm">
-				 	<span id="emailAddon" class="input-group-addon">Email</span>
-		 			<input type="text" class="form-control">
-		 		</div>
-				<div class="form-group contactForm">
-				  <textarea class="form-control" rows="5" id="comment"></textarea>
-				</div>
-				<button id="submitButton" class="btn btn-default">Submit</button>
-		 	</div>
-		</div>
-	</div>
+    
+    <div class="container col-xs-12" style="width:100%;margin:0;padding:0">
+        <div class="col-xs-12" style="width:100%;margin:0;padding:0" ng-view></div>        
+    </div>
 
 	<div id="footer" class="col-xs-12">
 		Copyright Carnegie Mellon Alpha Tau Omega 2016. Website Designed and Created by Brandon Schmuck.
