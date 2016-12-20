@@ -106,3 +106,14 @@ myApp.controller('aboutController', ['$scope', function($scope) {
 myApp.controller('contactController', ['$scope', function($scope) {
     
 }]);
+
+myApp.directive("brotherImage", function() {
+   return {
+       restrict: 'E',
+       templateUrl: 'directives/brotherImage.html',
+       replace: true,
+       scope: {
+            brotherObj: "="
+       }
+   } 
+});
