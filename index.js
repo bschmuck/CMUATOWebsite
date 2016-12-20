@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'gilbox.kineticSlider']);
 
 myApp.config(function ($routeProvider) {
     
@@ -30,8 +30,11 @@ myApp.config(function ($routeProvider) {
     })
 });
 
-myApp.controller('mainController', ['$scope', function($scope) {
+myApp.controller('mainController', ['$scope', '$timeout', '$window', function($scope, $timeout, $window) {
     $scope.photos = [
+        {name: "images/ato1.jpg"},
+        {name: "images/ato2.jpg"},
+        {name: "images/ato3.jpg"},
         {name: "images/ato1.jpg"},
         {name: "images/ato2.jpg"},
         {name: "images/ato3.jpg"}
@@ -46,6 +49,13 @@ myApp.controller('mainController', ['$scope', function($scope) {
       futureEventsOnly: true,
       sortDescending: false
     });
+        
+    //This is really dumb. The image carousel has a bug where it doesn't load right
+    //initially unless there is a resize event...
+    $timeout(function() {
+        $window.dispatchEvent(new Event("resize"));
+    },  10);
+    
 }]);
 
 myApp.controller('brothersController', ['$scope', function($scope) {

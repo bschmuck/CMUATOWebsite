@@ -1,9 +1,13 @@
 <div id="home">
     <!-- Loads collection of ATO images -->
-    <div class="col-xs-12 row row-horizon" id="photosDiv">
-        <div ng-repeat="photo in photos">
-            <div class="col-xs-6 col-md-4"><a href="#" class="thumbnail"><img ng-src="{{photo.name}}"></a></div>
-        </div>
+    <div class="col-xs-12" id="photosDiv">
+        <div kinetic-slider class="kinetic-slider-container">
+            <div class="kinetic-slider-content">  
+              <a href="#" ng-repeat="photo in photos">
+                <img ng-src="{{photo.name}}" alt=""/>
+              </a>
+            </div>
+        </div> 
     </div>
     
     <div class="col-xs-12">
